@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            background-color:#D94A38;
+            width:120px;
+            height:20px;
+            padding:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+输入名字：<input type="text" id="fname" onchange="myFunction()">
+<p>离开输入字段时，会触发一个函数，将输入文本转换为大写。</p>
+<script>
+    function myFunction() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+
+<hr>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)">
+    onmouseover <br> onmouseout</div>
+<script>
+    function mOver(obj) {
+        obj.innerHTML = "onmouseover"
+    }
+
+    function mOut(obj) {
+        obj.innerHTML = "onmouseout"
+    }
+</script>
+
+
+<hr>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)">
+    onmousedown<br>onmouseup</div>
+
+<script>
+    function mDown(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "onmousedown";
+    }
+
+    function mUp(obj) {
+        obj.style.backgroundColor="#D94A38";
+        obj.innerHTML="onmouseup";
+    }
+</script>
+
+
+
+<
+</body>
+</html>

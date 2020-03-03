@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!DOCTYPE html>
+<html>
+<body>
+<hr>
+<h1 id="id1">某标题</h1>
+<button type="button" onclick="document.getElementById('id1').style.color = 'red'">
+    点击触发事件
+</button>
+
+
+
+<hr>
+<h1 onclick="this.innerHTML = 'watering video'">what this uploader do</h1>
+
+
+<hr>
+<h1 onclick="changeText(this)">what this uploader do</h1>
+<script>
+    function changeText(id) {
+        id.innerHTML = "watering video by function";
+    }
+</script>
+
+
+<hr>
+<button id="myBtn">what this uploader do</button>
+<p id="demo"></p>
+<script>
+    document.getElementById("myBtn").onclick = display;
+
+    function display() {
+        document.getElementById("demo").innerHTML = "Watering video by bind event";
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

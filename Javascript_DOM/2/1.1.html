@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>
+        <p>aluminium</p>
+    </h1>
+</div>
+</body>
+<script>
+    let div = document.getElementsByTagName('div');
+    let h1 = document.getElementsByTagName('h1');
+    let p = document.getElementsByTagName('p');
+
+    div[0].addEventListener('click',()=>{
+        console.log('div');
+    });
+    h1[0].addEventListener('click',()=>{
+        console.log('h1');
+    },true);
+    p[0].addEventListener('click',()=>{
+        console.log('p');
+    });
+</script>
+</html>

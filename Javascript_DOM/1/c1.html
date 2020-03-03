@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="alu">aluminium</div>
+    <div class="alu"></div>
+    <div class="alu"></div>
+    <alu></alu>
+    <alu></alu>
+    <alu></alu>
+    <alu></alu>
+    <form action="" id="alu"></form>
+</body>
+<script>
+    var e1 = document.getElementById("alu");
+    var e2 = document.getElementsByClassName("alu");
+    var e3 = document.getElementsByTagName("alu");
+    var e4 = document.querySelectorAll("alu");
+    var e5 = document.forms["alu"];
+    console.log(e1);
+    console.log(e2);
+    console.log(e3);
+    console.log(e4);
+    console.log(e5);
+
+    // document.write(Date());
+    e1.innerHTML = "im water video";
+    e2[0].innerHTML = "im water video";
+    e2[0].dir = "rtl";
+    e2[0].style.color = "#AA00AA";
+
+</script>
+</html>

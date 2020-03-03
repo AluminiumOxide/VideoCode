@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>addEventListener()</h1>
+<p>使用 addEventListener() 方法在同一DOM元素上添加多事件</p>
+
+<button id="catch">试一试</button>
+<p id="demo"></p>
+
+<script>
+    var x = document.getElementById("catch");
+
+    x.addEventListener("mouseover", myFunction);
+    x.addEventListener("click", mySecondFunction);
+    x.addEventListener("mouseout", myThirdFunction);
+
+    function myFunction() {
+        document.getElementById("demo").innerHTML += "Moused over<br>";
+    }
+    function mySecondFunction() {
+        document.getElementById("demo").innerHTML += "Clicked<br>";
+    }
+    function myThirdFunction() {
+        document.getElementById("demo").innerHTML += "Moused out<br>";
+    }
+</script>
+
+</body>
+</html>

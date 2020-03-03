@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>addEventListener()</h1>
+<p>BOM是浏览器对象模型</p>
+<p>BOM的核心是Window对象</p>
+<p>代表浏览器窗口的Window对象是BOM的顶层对象</p>
+<p>此例在 window 对象上使用 addEventListener() </p>
+
+<p>尝试调整此浏览器窗口的大小以触发“resize”事件处理程序。</p>
+
+<p id="demo"></p>
+
+<script>
+    window.addEventListener("resize", function(){
+        document.getElementById("demo").innerHTML = Math.random();
+    });
+</script>
+
+</body>
+</html>

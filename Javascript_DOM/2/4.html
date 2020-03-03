@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div {
+            background-color: coral;
+            border: 1px solid;
+            padding: 50px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<h3>JavaScript removeEventListener()</h3>
+
+<div id="div">
+    <p>这个div元素绑定了onmousemove事件，每次在这个字段中移动鼠标时都会显示一个随机数</p>
+    <p>单击按钮以删除 div 的事件</p>
+    <button id="btn">删除</button>
+</div>
+<p id="demo"></p>
+</body>
+<script>
+    let div = document.getElementById("div");
+    let btn = document.getElementById("btn");
+    div.addEventListener("mousemove",one);
+
+    function one() {
+        document.getElementById("demo").innerHTML = Math.random();
+    }
+
+    btn.addEventListener('click',()=>{
+        div.removeEventListener('mousemove',one);
+    })
+
+</script>
+</html>
